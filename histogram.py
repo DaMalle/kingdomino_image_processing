@@ -5,7 +5,7 @@ import cv2 as cv
 def image_historgram(image):
     raw_image = cv.imread(image)
     hsv_image = cv.cvtColor(raw_image, cv.COLOR_BGR2HSV)
-    i, j = 2, 4
+    i, j = 0, 0
     cell = hsv_image[100*i:100*(i+1), 100*j:100*(j+1)]
     raw_cell = raw_image[100*i:100*(i+1), 100*j:100*(j+1)]
     # cv.imshow("cell.jpg", cell)
@@ -27,4 +27,4 @@ def image_historgram(image):
 
 
 if __name__ == "__main__":
-    image_historgram("14.jpg")
+    image_historgram("1.jpg")
